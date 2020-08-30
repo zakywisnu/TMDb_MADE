@@ -1,7 +1,6 @@
 package com.zeroemotion.tmdb_made.core.domain.model
 
 import android.os.Parcelable
-import com.google.gson.annotations.SerializedName
 import kotlinx.android.parcel.Parcelize
 
 @Parcelize
@@ -11,5 +10,6 @@ data class TvShow(
     val overview: String,
     val posterPath: String,
     val firstAirDate: String,
-    val voteAverage: String
+    val voteAverage: String,
+    val isFavorite: Boolean
 ) : Parcelable
