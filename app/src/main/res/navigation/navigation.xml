@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.zeroemotion.tmdb_made.home.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/actionHomeToDetailMovie"
+            app:destination="@id/detailMovieFragment"
+            app:enterAnim="@anim/fragment_open_enter"
+            app:exitAnim="@anim/fragment_open_exit"
+            app:popEnterAnim="@anim/fragment_open_enter"
+            app:popExitAnim="@anim/fragment_open_exit" />
+        <action
+            android:id="@+id/actionHomeToDetailTvShow"
+            app:destination="@id/detailTvShowFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/favoriteFragment"
+        android:name="com.zeroemotion.tmdb_made.favorite.FavoriteFragment"
+        android:label="Favorite"
+        tools:layout="@layout/fragment_favorite" >
+        <action
+            android:id="@+id/actionFavoriteToDetailMovie"
+            app:destination="@id/detailMovieFragment" />
+        <action
+            android:id="@+id/actionFavoriteToDetailTvShow"
+            app:destination="@id/detailTvShowFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailMovieFragment"
+        android:name="com.zeroemotion.tmdb_made.detail.DetailMovieFragment"
+        android:label="Detail Movie" >
+        <argument
+            android:name="movies"
+            app:argType="com.zeroemotion.tmdb_made.core.domain.model.Movie" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailTvShowFragment"
+        android:name="com.zeroemotion.tmdb_made.detail.DetailTvShowFragment"
+        android:label="Detail TV Show"
+        tools:layout="@layout/fragment_detail_tv_show" >
+        <argument
+            android:name="tvshow"
+            app:argType="com.zeroemotion.tmdb_made.core.domain.model.TvShow" />
+    </fragment>
+</navigation>
