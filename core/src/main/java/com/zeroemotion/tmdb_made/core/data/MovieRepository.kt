@@ -59,15 +59,6 @@ class MovieRepository(
             }
         }.asFlow()
     }
-    override fun getMovieDetail(id: Int): Flow<Movie> =
-        localDataSource.getMovieDetail(id).map {
-            DataMapper.mapMovieEntityToDomain(it)
-        }
-
-    override fun getTvShowDetail(id: Int): Flow<TvShow> =
-        localDataSource.getTvShowDetail(id).map {
-            DataMapper.mapTvShowEntityToDomain(it)
-        }
 
     override fun getFavoriteMovie(): Flow<List<Movie>> {
         return localDataSource.getFavoriteMovie().map {
