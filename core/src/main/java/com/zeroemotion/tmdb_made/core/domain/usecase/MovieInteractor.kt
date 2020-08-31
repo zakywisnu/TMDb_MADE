@@ -11,10 +11,6 @@ class MovieInteractor(private val movieRepository: IMovieRepository) : MovieUseC
 
     override fun getAllTvShow(): Flow<Resource<List<TvShow>>> = movieRepository.getAllTvShow()
 
-    override fun getMovieDetail(id: Int): Flow<Movie> = movieRepository.getMovieDetail(id)
-
-    override fun getTvShowDetail(id: Int): Flow<TvShow> = movieRepository.getTvShowDetail(id)
-
     override fun getFavoriteMovie(): Flow<List<Movie>> = movieRepository.getFavoriteMovie()
 
     override fun getFavoriteTvShow(): Flow<List<TvShow>> = movieRepository.getFavoriteTvShow()

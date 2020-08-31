@@ -18,7 +18,7 @@ interface MovieDao {
     fun getFavoriteMovie(): Flow<List<MovieEntity>>
 
     @Query("select * from tv_show where is_favorite = 1")
-    fun getFavoriteTvShow(): Flow<List<MovieEntity>>
+    fun getFavoriteTvShow(): Flow<List<TvShowEntity>>
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun insertMovie(movie: List<MovieEntity>)
