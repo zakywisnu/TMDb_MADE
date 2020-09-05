@@ -11,11 +11,13 @@ import com.zeroemotion.tmdb_made.core.domain.usecase.MovieInteractor
 import com.zeroemotion.tmdb_made.core.domain.usecase.MovieUseCase
 import com.zeroemotion.tmdb_made.core.utils.AppExecutors
 import com.zeroemotion.tmdb_made.core.utils.MovieConstant.BASE_URL
+import io.reactivex.plugins.RxJavaPlugins
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import org.koin.android.ext.koin.androidContext
 import org.koin.dsl.module
 import retrofit2.Retrofit
+import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory
 import retrofit2.converter.gson.GsonConverterFactory
 import java.util.concurrent.TimeUnit
 
@@ -24,7 +26,7 @@ val databaseModule = module {
     single {
         Room.databaseBuilder(
             androidContext(),
-            MovieDatabase::class.java, "movie.db"
+            MovieDatabase::class.java, "tmdb.db"
         ).fallbackToDestructiveMigration().build()
     }
 }
@@ -41,6 +43,7 @@ val networkModule = module {
         val retrofit = Retrofit.Builder()
             .baseUrl(BASE_URL)
             .addConverterFactory(GsonConverterFactory.create())
+            .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
             .client(get())
             .build()
         retrofit.create(ApiService::class.java)

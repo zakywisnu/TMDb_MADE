@@ -13,7 +13,6 @@ import com.zeroemotion.tmdb_made.core.domain.model.TvShow
 import com.zeroemotion.tmdb_made.core.utils.getProgressDrawable
 import com.zeroemotion.tmdb_made.core.utils.loadImage
 import com.zeroemotion.tmdb_made.databinding.FragmentDetailTvShowBinding
-import kotlinx.android.synthetic.main.fragment_detail_movie.*
 import kotlinx.android.synthetic.main.fragment_detail_tv_show.*
 import org.koin.android.viewmodel.ext.android.viewModel
 
@@ -28,7 +27,8 @@ class DetailTvShowFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        dataBinding = DataBindingUtil.inflate(inflater,R.layout.fragment_detail_tv_show, container, false)
+        dataBinding =
+            DataBindingUtil.inflate(inflater, R.layout.fragment_detail_tv_show, container, false)
         tvShows = args.tvshow
         return dataBinding.root
     }
@@ -44,7 +44,7 @@ class DetailTvShowFragment : Fragment() {
 
         setStatusFavorite(status)
 
-        fab_tv_show.setOnClickListener{
+        fab_tv_show.setOnClickListener {
             status = !status!!
             tvShows?.let { it1 -> viewModel.setFavoriteTvShow(it1, status!!) }
             setStatusFavorite(status)
@@ -53,10 +53,20 @@ class DetailTvShowFragment : Fragment() {
     }
 
     private fun setStatusFavorite(status: Boolean?) {
-        if (status!!){
-            fab_tv_show.setImageDrawable(context?.let { ContextCompat.getDrawable(it,R.drawable.ic_favorite) })
-        } else{
-            fab_tv_show.setImageDrawable(context?.let { ContextCompat.getDrawable(it,R.drawable.ic_not_favorite) })
+        if (status!!) {
+            fab_tv_show.setImageDrawable(context?.let {
+                ContextCompat.getDrawable(
+                    it,
+                    R.drawable.ic_favorite
+                )
+            })
+        } else {
+            fab_tv_show.setImageDrawable(context?.let {
+                ContextCompat.getDrawable(
+                    it,
+                    R.drawable.ic_not_favorite
+                )
+            })
         }
 
     }

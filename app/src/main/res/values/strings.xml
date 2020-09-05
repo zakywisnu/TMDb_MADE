@@ -16,4 +16,9 @@
     <string name="favorite">Favorite</string>
     <string name="no_favorite_movie">No Favorite Movie</string>
     <string name="no_favorite_tv_show">No Favorite TV Show</string>
+    <string name="title_trending">Trending</string>
+    <string name="title_search">Search</string>
+    <string name="title_upcoming">Upcoming</string>
+    <string name="upcoming">Upcoming</string>
+    <string name="title_moviesearch">MovieSearch</string>
 </resources>

@@ -8,6 +8,10 @@ import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
 import com.zeroemotion.tmdb_made.core.R
 import com.zeroemotion.tmdb_made.core.utils.MovieConstant.BASE_IMAGE_URL
+import io.reactivex.ObservableTransformer
+import io.reactivex.SingleTransformer
+import io.reactivex.android.schedulers.AndroidSchedulers
+import io.reactivex.schedulers.Schedulers
 
 fun getProgressDrawable(context: Context): CircularProgressDrawable {
     return CircularProgressDrawable(context).apply {
@@ -30,4 +34,13 @@ fun ImageView.loadImage(uri: String?, progressDrawable: CircularProgressDrawable
 @BindingAdapter("android:imageUrl")
 fun loadImage(view: ImageView, urlString: String?) {
     view.loadImage(urlString, getProgressDrawable(view.context))
+}
+
+object RxUtils {
+    fun <T> applySingleAsync(): SingleTransformer<T, T> {
+        return SingleTransformer { single ->
+            single.subscribeOn(Schedulers.io())
+                .observeOn(AndroidSchedulers.mainThread())
+        }
+    }
 }

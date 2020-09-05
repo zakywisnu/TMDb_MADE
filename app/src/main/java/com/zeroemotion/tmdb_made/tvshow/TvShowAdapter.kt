@@ -4,13 +4,15 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
+import androidx.navigation.Navigation
 import androidx.recyclerview.widget.RecyclerView
 import com.zeroemotion.tmdb_made.R
+import com.zeroemotion.tmdb_made.core.databinding.ItemTvShowBinding
 import com.zeroemotion.tmdb_made.core.domain.model.TvShow
 import com.zeroemotion.tmdb_made.core.utils.CustomOnClick
-import com.zeroemotion.tmdb_made.databinding.ItemTvShowBinding
+import com.zeroemotion.tmdb_made.home.HomeFragmentDirections
 
-class TvShowAdapter : RecyclerView.Adapter<TvShowAdapter.TvShowViewHolder>(),CustomOnClick {
+class TvShowAdapter : RecyclerView.Adapter<TvShowAdapter.TvShowViewHolder>(), CustomOnClick {
 
     private var listData = ArrayList<TvShow>()
 
@@ -42,11 +44,14 @@ class TvShowAdapter : RecyclerView.Adapter<TvShowAdapter.TvShowViewHolder>(),Cus
 
     override fun getItemCount(): Int = listData.size
 
-    class TvShowViewHolder(var view: ItemTvShowBinding) : RecyclerView.ViewHolder(view.root) {
-
-    }
+    class TvShowViewHolder(var view: ItemTvShowBinding) : RecyclerView.ViewHolder(view.root)
 
     override fun onClicked(v: View) {
-        TODO("Not yet implemented")
+        for (tv in listData) {
+            if (v.tag == tv.id) {
+                val action = HomeFragmentDirections.actionHomeToDetailTvShow(tv)
+                Navigation.findNavController(v).navigate(action)
+            }
+        }
     }
 }

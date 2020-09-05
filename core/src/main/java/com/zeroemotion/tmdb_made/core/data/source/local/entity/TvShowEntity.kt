@@ -22,5 +22,5 @@ data class TvShowEntity(
     @ColumnInfo(name = "vote_average")
     var voteAverage: String,
     @ColumnInfo(name = "is_favorite")
-    var isFavorite: Boolean
+    var isFavorite: Boolean,
 )

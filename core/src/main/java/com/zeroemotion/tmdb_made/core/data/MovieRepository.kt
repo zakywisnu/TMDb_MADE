@@ -11,6 +11,7 @@ import com.zeroemotion.tmdb_made.core.domain.model.TvShow
 import com.zeroemotion.tmdb_made.core.domain.repository.IMovieRepository
 import com.zeroemotion.tmdb_made.core.utils.AppExecutors
 import com.zeroemotion.tmdb_made.core.utils.DataMapper
+import io.reactivex.Single
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.map
 
@@ -26,6 +27,7 @@ class MovieRepository(
                     DataMapper.mapListMovieEntitiesToDomain(it)
                 }
             }
+
             override fun shouldFetch(data: List<Movie>?): Boolean =
                 data == null || data.isEmpty()
 
@@ -80,6 +82,19 @@ class MovieRepository(
     override fun setFavoriteTvShow(tvShow: TvShow, state: Boolean) {
         val tvEntity = DataMapper.mapTvShowDomainToEntity(tvShow)
         appExecutors.diskIO().execute { localDataSource.setFavoriteTvShow(tvEntity, state) }
+    }
+
+    override fun getTrendingMovie(): Single<List<Movie>> {
+        return remoteDataSource.getTrendingMovie().map {
+            Log.i("dataupcoming", it.results.toString())
+            DataMapper.mapMovieResponseToDomain(it.results)
+        }
+    }
+
+    override fun getTrendingTvShow(): Single<List<TvShow>> {
+        return remoteDataSource.getTrendingTvShow().map {
+            DataMapper.mapTvShowResponseToDomain(it.results)
+        }
     }
 
 }
