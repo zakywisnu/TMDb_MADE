@@ -39,8 +39,8 @@ fun loadImage(view: ImageView, urlString: String?) {
 object RxUtils {
     fun <T> applySingleAsync(): SingleTransformer<T, T> {
         return SingleTransformer { single ->
-            single.subscribeOn(Schedulers.io())
-                .observeOn(AndroidSchedulers.mainThread())
-        }
-    }
+    single.subscribeOn(Schedulers.io())
+        .observeOn(AndroidSchedulers.mainThread())
+}
+}
 }
