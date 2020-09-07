@@ -4,6 +4,7 @@ import com.zeroemotion.tmdb_made.core.data.Resource
 import com.zeroemotion.tmdb_made.core.domain.model.Movie
 import com.zeroemotion.tmdb_made.core.domain.model.TvShow
 import com.zeroemotion.tmdb_made.core.domain.repository.IMovieRepository
+import io.reactivex.Single
 import kotlinx.coroutines.flow.Flow
 
 class MovieInteractor(private val movieRepository: IMovieRepository) : MovieUseCase {
@@ -20,5 +21,11 @@ class MovieInteractor(private val movieRepository: IMovieRepository) : MovieUseC
 
     override fun setFavoriteTvShow(tvShow: TvShow, state: Boolean) =
         movieRepository.setFavoriteTvShow(tvShow, state)
+
+    override fun getTrendingMovie(): Single<List<Movie>> =
+        movieRepository.getTrendingMovie()
+
+    override fun getTrendingTvShow(): Single<List<TvShow>> =
+        movieRepository.getTrendingTvShow()
 
 }

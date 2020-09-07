@@ -10,6 +10,10 @@
             android:id="@+id/favoriteFragment"
             android:icon="@drawable/ic_favorite"
             android:title="@string/favorite"/>
+        <item
+            android:id="@+id/trendingFragment"
+            android:icon="@drawable/ic_upcoming"
+            android:title="@string/title_trending"/>
     </group>
 
 </menu>

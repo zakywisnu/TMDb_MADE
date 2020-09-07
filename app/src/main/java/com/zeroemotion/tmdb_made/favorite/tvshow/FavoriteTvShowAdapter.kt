@@ -4,13 +4,16 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
+import androidx.navigation.Navigation
 import androidx.recyclerview.widget.RecyclerView
 import com.zeroemotion.tmdb_made.R
+import com.zeroemotion.tmdb_made.core.databinding.ItemTvShowBinding
 import com.zeroemotion.tmdb_made.core.domain.model.TvShow
 import com.zeroemotion.tmdb_made.core.utils.CustomOnClick
-import com.zeroemotion.tmdb_made.databinding.ItemTvShowBinding
+import com.zeroemotion.tmdb_made.favorite.FavoriteFragmentDirections
 
-class FavoriteTvShowAdapter : RecyclerView.Adapter<FavoriteTvShowAdapter.FavoriteTvShowViewHolder>(), CustomOnClick {
+class FavoriteTvShowAdapter :
+    RecyclerView.Adapter<FavoriteTvShowAdapter.FavoriteTvShowViewHolder>(), CustomOnClick {
 
     private var listData = ArrayList<TvShow>()
 
@@ -45,6 +48,11 @@ class FavoriteTvShowAdapter : RecyclerView.Adapter<FavoriteTvShowAdapter.Favorit
     class FavoriteTvShowViewHolder(var view: ItemTvShowBinding) : RecyclerView.ViewHolder(view.root)
 
     override fun onClicked(v: View) {
-        TODO("Not yet implemented")
+        for (tv in listData) {
+            if (v.tag == tv.id) {
+                val action = FavoriteFragmentDirections.actionFavoriteToDetailTvShow(tv)
+                Navigation.findNavController(v).navigate(action)
+            }
+        }
     }
 }

@@ -7,16 +7,17 @@ import androidx.databinding.DataBindingUtil
 import androidx.navigation.Navigation
 import androidx.recyclerview.widget.RecyclerView
 import com.zeroemotion.tmdb_made.R
+import com.zeroemotion.tmdb_made.core.databinding.ItemMovieBinding
 import com.zeroemotion.tmdb_made.core.domain.model.Movie
 import com.zeroemotion.tmdb_made.core.utils.CustomOnClick
-import com.zeroemotion.tmdb_made.databinding.ItemMovieBinding
 import com.zeroemotion.tmdb_made.favorite.FavoriteFragmentDirections
 
-class FavoriteMovieAdapter : RecyclerView.Adapter<FavoriteMovieAdapter.FavoriteMovieViewHolder>(), CustomOnClick {
+class FavoriteMovieAdapter : RecyclerView.Adapter<FavoriteMovieAdapter.FavoriteMovieViewHolder>(),
+    CustomOnClick {
 
     private var listData = ArrayList<Movie>()
 
-    fun setData(newList : List<Movie>?){
+    fun setData(newList: List<Movie>?) {
         if (newList == null) return
         listData.clear()
         listData.addAll(newList)
@@ -25,7 +26,8 @@ class FavoriteMovieAdapter : RecyclerView.Adapter<FavoriteMovieAdapter.FavoriteM
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): FavoriteMovieViewHolder {
         val inflater = LayoutInflater.from(parent.context)
-        val view = DataBindingUtil.inflate<ItemMovieBinding>(inflater, R.layout.item_movie, parent,false)
+        val view =
+            DataBindingUtil.inflate<ItemMovieBinding>(inflater, R.layout.item_movie, parent, false)
         return FavoriteMovieViewHolder(view)
     }
 
@@ -35,13 +37,11 @@ class FavoriteMovieAdapter : RecyclerView.Adapter<FavoriteMovieAdapter.FavoriteM
     }
 
     override fun getItemCount(): Int = listData.size
-    class FavoriteMovieViewHolder(var view: ItemMovieBinding): RecyclerView.ViewHolder(view.root) {
-
-    }
+    class FavoriteMovieViewHolder(var view: ItemMovieBinding) : RecyclerView.ViewHolder(view.root)
 
     override fun onClicked(v: View) {
-        for (movie in listData){
-            if (v.tag == movie.id){
+        for (movie in listData) {
+            if (v.tag == movie.id) {
                 val action = FavoriteFragmentDirections.actionFavoriteToDetailMovie(movie)
                 Navigation.findNavController(v).navigate(action)
             }

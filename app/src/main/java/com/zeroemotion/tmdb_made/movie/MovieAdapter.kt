@@ -7,17 +7,16 @@ import androidx.databinding.DataBindingUtil
 import androidx.navigation.Navigation
 import androidx.recyclerview.widget.RecyclerView
 import com.zeroemotion.tmdb_made.R
+import com.zeroemotion.tmdb_made.core.databinding.ItemMovieBinding
 import com.zeroemotion.tmdb_made.core.domain.model.Movie
 import com.zeroemotion.tmdb_made.core.utils.CustomOnClick
-import com.zeroemotion.tmdb_made.databinding.ItemMovieBinding
-import com.zeroemotion.tmdb_made.detail.DetailMovieFragmentArgs
 import com.zeroemotion.tmdb_made.home.HomeFragmentDirections
 
-class MovieAdapter : RecyclerView.Adapter<MovieAdapter.MovieViewHolder>(), CustomOnClick{
+class MovieAdapter : RecyclerView.Adapter<MovieAdapter.MovieViewHolder>(), CustomOnClick {
 
     private var listData = ArrayList<Movie>()
 
-    fun setData(newList : List<Movie>?){
+    fun setData(newList: List<Movie>?) {
         if (newList == null) return
         listData.clear()
         listData.addAll(newList)
@@ -26,7 +25,8 @@ class MovieAdapter : RecyclerView.Adapter<MovieAdapter.MovieViewHolder>(), Custo
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MovieViewHolder {
         val inflater = LayoutInflater.from(parent.context)
-        val view = DataBindingUtil.inflate<ItemMovieBinding>(inflater, R.layout.item_movie, parent,false)
+        val view =
+            DataBindingUtil.inflate<ItemMovieBinding>(inflater, R.layout.item_movie, parent, false)
         return MovieViewHolder(view)
     }
 
@@ -36,13 +36,11 @@ class MovieAdapter : RecyclerView.Adapter<MovieAdapter.MovieViewHolder>(), Custo
     }
 
     override fun getItemCount(): Int = listData.size
-    class MovieViewHolder(var view: ItemMovieBinding): RecyclerView.ViewHolder(view.root) {
-
-    }
+    class MovieViewHolder(var view: ItemMovieBinding) : RecyclerView.ViewHolder(view.root)
 
     override fun onClicked(v: View) {
-        for (movie in listData){
-            if (v.tag == movie.id){
+        for (movie in listData) {
+            if (v.tag == movie.id) {
                 val action = HomeFragmentDirections.actionHomeToDetailMovie(movie)
                 Navigation.findNavController(v).navigate(action)
             }

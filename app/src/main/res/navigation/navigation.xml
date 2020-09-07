@@ -50,4 +50,16 @@
             android:name="tvshow"
             app:argType="com.zeroemotion.tmdb_made.core.domain.model.TvShow" />
     </fragment>
+    <fragment
+        android:id="@+id/trendingFragment"
+        android:name="com.zeroemotion.tmdb_made.trending.TrendingFragment"
+        app:moduleName="trending"
+        android:label="Trending" >
+        <action
+            android:id="@+id/actionTrendingToDetailMovie"
+            app:destination="@id/detailMovieFragment" />
+        <action
+            android:id="@+id/actionTrendingToDetailTvShow"
+            app:destination="@id/detailTvShowFragment" />
+    </fragment>
 </navigation>

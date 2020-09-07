@@ -1,15 +1,14 @@
 package com.zeroemotion.tmdb_made.favorite.tvshow
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
+import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.GridLayoutManager
 import com.zeroemotion.tmdb_made.R
-import com.zeroemotion.tmdb_made.databinding.FragmentDetailTvShowBinding
 import com.zeroemotion.tmdb_made.databinding.FragmentFavoriteTvShowBinding
 import com.zeroemotion.tmdb_made.favorite.FavoriteViewModel
 import kotlinx.android.synthetic.main.fragment_favorite_tv_show.*
@@ -25,7 +24,8 @@ class FavoriteTvShowFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        dataBinding = DataBindingUtil.inflate(inflater,R.layout.fragment_favorite_tv_show, container, false)
+        dataBinding =
+            DataBindingUtil.inflate(inflater, R.layout.fragment_favorite_tv_show, container, false)
         return dataBinding.root
     }
 
@@ -42,7 +42,7 @@ class FavoriteTvShowFragment : Fragment() {
 
     private fun observeFavoriteTvShow() {
         viewModel.tvShowFavorite.observe(viewLifecycleOwner, Observer { tvShow ->
-            if (tvShow != null){
+            if (tvShow != null) {
                 rvFavTvshow.visibility = View.VISIBLE
                 tvShowFavError.visibility = View.GONE
                 tvShowAdapter.setData(tvShow)

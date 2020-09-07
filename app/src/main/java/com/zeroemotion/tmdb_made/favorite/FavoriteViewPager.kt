@@ -14,7 +14,7 @@ class FavoriteViewPager(private val context: Context, fm: FragmentManager) : Fra
     BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT
 ) {
 
-    companion object{
+    companion object {
         @StringRes
         private val TITLE_TAB = intArrayOf(R.string.favorite_movie, R.string.favorite_tv_show)
     }
