@@ -1,1 +1,0 @@
-[![zakywisnu](https://circleci.com/gh/zakywisnu/TMDb_MADE.svg?style=svg)](https://circleci.com/gh/zakywisnu/TMDb_MADE)
