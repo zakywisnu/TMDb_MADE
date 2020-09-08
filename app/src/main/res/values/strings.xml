@@ -1,24 +1,14 @@
 <resources>
     <string name="app_name">TMDb-MADE</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="image">Image</string>
-    <string name="title">Title</string>
     <string name="an_error_occurred">An Error Occurred</string>
     <string name="favorite_movie">Favorite Movie</string>
     <string name="favorite_tv_show">Favorite TV Show</string>
     <string name="movie">Movie</string>
     <string name="tv_show">TV Show</string>
-    <string name="release_date">release_date</string>
-    <string name="_7_8">7.8</string>
-    <string name="overview">overview</string>
     <string name="home">Home</string>
     <string name="favorite">Favorite</string>
     <string name="no_favorite_movie">No Favorite Movie</string>
     <string name="no_favorite_tv_show">No Favorite TV Show</string>
     <string name="title_trending">Trending</string>
-    <string name="title_search">Search</string>
-    <string name="title_upcoming">Upcoming</string>
-    <string name="upcoming">Upcoming</string>
-    <string name="title_moviesearch">MovieSearch</string>
 </resources>

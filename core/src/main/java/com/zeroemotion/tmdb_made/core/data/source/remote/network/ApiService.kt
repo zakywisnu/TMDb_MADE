@@ -8,22 +8,22 @@ import retrofit2.http.GET
 import retrofit2.http.Query
 
 interface ApiService {
-    @GET("movie/popular?")
+    @GET("/3/movie/popular?")
     suspend fun getMovie(
         @Query("api_key") api_key: String
     ): ListResponse<MovieResponse>
 
-    @GET("tv/popular?")
+    @GET("/3/tv/popular?")
     suspend fun getTvShow(
         @Query("api_key") api_key: String
     ): ListResponse<TvShowResponse>
 
-    @GET("trending/movie/day?")
+    @GET("/3/trending/movie/day?")
     fun getTrendingMovie(
         @Query("api_key") api_key: String
     ): Single<ListResponse<MovieResponse>>
 
-    @GET("trending/tv/day?")
+    @GET("/3/trending/tv/day?")
     fun getTrendingTvShow(
         @Query("api_key") api_key: String
     ): Single<ListResponse<TvShowResponse>>

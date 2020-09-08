@@ -16,6 +16,8 @@ buildscript {
     ext.glide_version = "4.11.0"
 
     ext.room_version = "2.2.5"
+    ext.sqlcipher_version = "4.4.0"
+    ext.sqlite_version = "2.1.0"
 
     ext.nav_version = "2.3.0"
 
@@ -29,6 +31,7 @@ buildscript {
     ext.lifecycle_version = "2.2.0"
 
     ext.koin_version = "2.1.5"
+    ext.leakcanary_version = "2.4"
     repositories {
         google()
         jcenter()
