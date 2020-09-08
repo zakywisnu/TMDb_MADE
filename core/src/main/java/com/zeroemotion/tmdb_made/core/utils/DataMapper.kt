@@ -55,16 +55,6 @@ object DataMapper {
         return movieList
     }
 
-    fun mapMovieEntityToDomain(input: MovieEntity): Movie = Movie(
-        id = input.id,
-        title = input.title,
-        overview = input.overview,
-        posterPath = input.posterPath,
-        releaseDate = input.releaseDate,
-        voteAverage = input.voteAverage,
-        isFavorite = input.isFavorite
-    )
-
     fun mapMovieDomainToEntity(input: Movie) = MovieEntity(
         id = input.id,
         title = input.title,
@@ -105,15 +95,6 @@ object DataMapper {
             )
         }
 
-    fun mapTvShowEntityToDomain(input: TvShowEntity): TvShow = TvShow(
-        id = input.id,
-        name = input.name,
-        overview = input.overview,
-        posterPath = input.posterPath,
-        firstAirDate = input.firstAirDate,
-        voteAverage = input.voteAverage,
-        isFavorite = input.isFavorite
-    )
     fun mapTvShowResponseToDomain(input: List<TvShowResponse>): List<TvShow> {
         val tvShowList = ArrayList<TvShow>()
         input.map {

@@ -13,8 +13,6 @@ import com.zeroemotion.tmdb_made.databinding.FragmentHomeBinding
 class HomeFragment : Fragment() {
 
     private lateinit var dataBinding: FragmentHomeBinding
-    private lateinit var menu: Menu
-
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,

@@ -8,7 +8,6 @@ import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
 import com.zeroemotion.tmdb_made.core.R
 import com.zeroemotion.tmdb_made.core.utils.MovieConstant.BASE_IMAGE_URL
-import io.reactivex.ObservableTransformer
 import io.reactivex.SingleTransformer
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.schedulers.Schedulers
