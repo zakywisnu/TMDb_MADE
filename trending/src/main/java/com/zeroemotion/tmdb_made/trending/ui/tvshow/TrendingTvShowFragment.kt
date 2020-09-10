@@ -16,7 +16,6 @@ import org.koin.android.viewmodel.ext.android.viewModel
 
 class TrendingTvShowFragment : Fragment() {
 
-    private lateinit var dataBinding: FragmentTrendingTvShowBinding
     private val tvShowAdapter = TrendingTvShowAdapter()
     private val viewModel: TrendingViewModel by viewModel()
 
@@ -24,9 +23,7 @@ class TrendingTvShowFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        dataBinding =
-            DataBindingUtil.inflate(inflater, R.layout.fragment_trending_tv_show, container, false)
-        return dataBinding.root
+        return inflater.inflate(R.layout.fragment_trending_tv_show,container,false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -57,5 +54,10 @@ class TrendingTvShowFragment : Fragment() {
         viewModel.error.observe(viewLifecycleOwner, Observer { error ->
             tvShowTrendingError.visibility = if (error) View.VISIBLE else View.GONE
         })
+    }
+
+    override fun onDestroyView() {
+        rvTrendingTvshow.adapter = null
+        super.onDestroyView()
     }
 }

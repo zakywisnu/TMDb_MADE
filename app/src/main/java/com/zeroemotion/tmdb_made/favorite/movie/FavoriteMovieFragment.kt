@@ -17,16 +17,13 @@ import org.koin.android.viewmodel.ext.android.viewModel
 class FavoriteMovieFragment : Fragment() {
 
     private val viewModel: FavoriteViewModel by viewModel()
-    private lateinit var dataBinding: FragmentFavoriteMovieBinding
     private val movieAdapter = FavoriteMovieAdapter()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        dataBinding =
-            DataBindingUtil.inflate(inflater, R.layout.fragment_favorite_movie, container, false)
-        return dataBinding.root
+        return inflater.inflate(R.layout.fragment_favorite_movie,container,false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -45,5 +42,10 @@ class FavoriteMovieFragment : Fragment() {
         viewModel.movieFavorite.observe(viewLifecycleOwner, Observer { movie ->
             movieAdapter.setData(movie)
         })
+    }
+
+    override fun onDestroyView() {
+        rvFavMovie.adapter = null
+        super.onDestroyView()
     }
 }

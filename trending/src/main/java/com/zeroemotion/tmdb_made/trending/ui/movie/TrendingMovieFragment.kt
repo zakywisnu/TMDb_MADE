@@ -16,7 +16,6 @@ import org.koin.android.viewmodel.ext.android.viewModel
 
 class TrendingMovieFragment : Fragment() {
 
-    private lateinit var dataBinding: FragmentTrendingMovieBinding
     private val movieAdapter = TrendingMovieAdapter()
     private val viewModel: TrendingViewModel by viewModel()
 
@@ -24,9 +23,7 @@ class TrendingMovieFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        dataBinding =
-            DataBindingUtil.inflate(inflater, R.layout.fragment_trending_movie, container, false)
-        return dataBinding.root
+        return inflater.inflate(R.layout.fragment_trending_movie,container,false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -61,4 +58,8 @@ class TrendingMovieFragment : Fragment() {
 
     }
 
+    override fun onDestroyView() {
+        rvTrendingMovie.adapter = null
+        super.onDestroyView()
+    }
 }

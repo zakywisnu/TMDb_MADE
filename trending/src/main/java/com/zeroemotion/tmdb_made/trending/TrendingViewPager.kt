@@ -5,10 +5,11 @@ import androidx.annotation.StringRes
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentPagerAdapter
+import androidx.fragment.app.FragmentStatePagerAdapter
 import com.zeroemotion.tmdb_made.trending.ui.movie.TrendingMovieFragment
 import com.zeroemotion.tmdb_made.trending.ui.tvshow.TrendingTvShowFragment
 
-class TrendingViewPager(private val context: Context, fm: FragmentManager) : FragmentPagerAdapter(
+class TrendingViewPager(private val context: Context, fm: FragmentManager) : FragmentStatePagerAdapter(
     fm,
     BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT
 ) {

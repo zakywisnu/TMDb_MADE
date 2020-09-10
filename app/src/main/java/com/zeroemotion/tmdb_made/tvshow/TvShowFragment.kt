@@ -17,15 +17,13 @@ import org.koin.android.viewmodel.ext.android.viewModel
 class TvShowFragment : Fragment() {
 
     private val viewModel: TvShowViewModel by viewModel()
-    private lateinit var dataBinding: FragmentTvShowBinding
     private val tvShowAdapter = TvShowAdapter()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        dataBinding = DataBindingUtil.inflate(inflater, R.layout.fragment_tv_show, container, false)
-        return dataBinding.root
+        return inflater.inflate(R.layout.fragment_tv_show,container,false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -60,4 +58,8 @@ class TvShowFragment : Fragment() {
         })
     }
 
+    override fun onDestroyView() {
+        rvTvShow.adapter = null
+        super.onDestroyView()
+    }
 }
