@@ -17,15 +17,13 @@ import org.koin.android.viewmodel.ext.android.viewModel
 class MovieFragment : Fragment() {
 
     private val viewModel: MovieViewModel by viewModel()
-    private lateinit var dataBinding: FragmentMovieBinding
     private val movieAdapter = MovieAdapter()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        dataBinding = DataBindingUtil.inflate(inflater, R.layout.fragment_movie, container, false)
-        return dataBinding.root
+        return inflater.inflate(R.layout.fragment_movie,container,false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -60,4 +58,8 @@ class MovieFragment : Fragment() {
         })
     }
 
+    override fun onDestroyView() {
+        rvMovie.adapter = null
+        super.onDestroyView()
+    }
 }

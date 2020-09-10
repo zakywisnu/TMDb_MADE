@@ -5,11 +5,12 @@ import androidx.annotation.StringRes
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentPagerAdapter
+import androidx.fragment.app.FragmentStatePagerAdapter
 import com.zeroemotion.tmdb_made.R
 import com.zeroemotion.tmdb_made.favorite.movie.FavoriteMovieFragment
 import com.zeroemotion.tmdb_made.favorite.tvshow.FavoriteTvShowFragment
 
-class FavoriteViewPager(private val context: Context, fm: FragmentManager) : FragmentPagerAdapter(
+class FavoriteViewPager(private val context: Context, fm: FragmentManager) : FragmentStatePagerAdapter(
     fm,
     BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT
 ) {

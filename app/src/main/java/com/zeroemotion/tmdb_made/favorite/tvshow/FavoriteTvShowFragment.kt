@@ -16,7 +16,6 @@ import org.koin.android.viewmodel.ext.android.viewModel
 
 class FavoriteTvShowFragment : Fragment() {
 
-    private lateinit var dataBinding: FragmentFavoriteTvShowBinding
     private val viewModel: FavoriteViewModel by viewModel()
     private val tvShowAdapter = FavoriteTvShowAdapter()
 
@@ -24,9 +23,7 @@ class FavoriteTvShowFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        dataBinding =
-            DataBindingUtil.inflate(inflater, R.layout.fragment_favorite_tv_show, container, false)
-        return dataBinding.root
+        return inflater.inflate(R.layout.fragment_favorite_tv_show,container,false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -53,4 +50,8 @@ class FavoriteTvShowFragment : Fragment() {
         })
     }
 
+    override fun onDestroyView() {
+        rvFavTvshow.adapter = null
+        super.onDestroyView()
+    }
 }
