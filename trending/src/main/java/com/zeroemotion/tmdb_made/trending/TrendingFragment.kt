@@ -19,7 +19,7 @@ class TrendingFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         loadKoinModules(trendingModule)
-        return inflater.inflate(R.layout.fragment_trending,container,false)
+        return inflater.inflate(R.layout.fragment_trending, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
