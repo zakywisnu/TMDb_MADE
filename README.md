@@ -6,7 +6,7 @@
 * [Setup](#setup)
 
 ## General Info
-This is a simple android movie catalogue project using Jetpack Library for Dicoding MADE Submission
+This is a simple android movie catalogue project using Jetpack Library, SOLID and clean architecture, repository pattern, and dependency injection for Dicoding MADE Submission
 
 ## Used Libraries
 This project build with:
