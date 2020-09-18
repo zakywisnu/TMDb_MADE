@@ -1,9 +1,9 @@
 # ANDROID MOVIE APPS - [![zakywisnu](https://circleci.com/gh/zakywisnu/TMDb_MADE.svg?style=shield)](https://circleci.com/gh/zakywisnu/TMDb_MADE)
 
 ## Table of Contents
-* [General Info] (#general-info)
-* [Used Libraries] (#used-libraries)
-* [Setup] (#setup)
+* [General Info](#general-info)
+* [Used Libraries](#used-libraries)
+* [Setup](#setup)
 
 ## General Info
 This is a simple android movie catalogue project using Jetpack Library for Dicoding MADE Submission
@@ -27,6 +27,8 @@ This project build with:
 * Leak Canary version           : 2.4
 
 ## Setup
+```
 * Clone this repository
 * Insert your TMDb API Key in MovieConstant.kt file inside core module
 * Run the application
+```
