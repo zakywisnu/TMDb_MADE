@@ -1,0 +1,4 @@
+#Fri Sep 18 21:22:51 WIB 2020
+base.0=/Users/zakywisnu/Documents/Zaky/mywork/Android/TMDb_MADE/trending/build/intermediates/dex/debug/mergeProjectDexDebug/classes.dex
+path.0=classes.dex
+renamed.0=classes.dex

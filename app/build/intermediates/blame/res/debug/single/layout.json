@@ -1,0 +1,34 @@
+[
+    {
+        "merged": "/Users/zakywisnu/Documents/Zaky/mywork/Android/TMDb_MADE/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_favorite.xml",
+        "source": "/Users/zakywisnu/Documents/Zaky/mywork/Android/TMDb_MADE/app/src/main/res/layout/fragment_favorite.xml"
+    },
+    {
+        "merged": "/Users/zakywisnu/Documents/Zaky/mywork/Android/TMDb_MADE/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_tv_show.xml",
+        "source": "/Users/zakywisnu/Documents/Zaky/mywork/Android/TMDb_MADE/app/src/main/res/layout/fragment_tv_show.xml"
+    },
+    {
+        "merged": "/Users/zakywisnu/Documents/Zaky/mywork/Android/TMDb_MADE/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_detail_movie.xml",
+        "source": "/Users/zakywisnu/Documents/Zaky/mywork/Android/TMDb_MADE/app/src/main/res/layout/fragment_detail_movie.xml"
+    },
+    {
+        "merged": "/Users/zakywisnu/Documents/Zaky/mywork/Android/TMDb_MADE/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_home.xml",
+        "source": "/Users/zakywisnu/Documents/Zaky/mywork/Android/TMDb_MADE/app/src/main/res/layout/fragment_home.xml"
+    },
+    {
+        "merged": "/Users/zakywisnu/Documents/Zaky/mywork/Android/TMDb_MADE/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_favorite_movie.xml",
+        "source": "/Users/zakywisnu/Documents/Zaky/mywork/Android/TMDb_MADE/app/src/main/res/layout/fragment_favorite_movie.xml"
+    },
+    {
+        "merged": "/Users/zakywisnu/Documents/Zaky/mywork/Android/TMDb_MADE/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_favorite_tv_show.xml",
+        "source": "/Users/zakywisnu/Documents/Zaky/mywork/Android/TMDb_MADE/app/src/main/res/layout/fragment_favorite_tv_show.xml"
+    },
+    {
+        "merged": "/Users/zakywisnu/Documents/Zaky/mywork/Android/TMDb_MADE/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_detail_tv_show.xml",
+        "source": "/Users/zakywisnu/Documents/Zaky/mywork/Android/TMDb_MADE/app/src/main/res/layout/fragment_detail_tv_show.xml"
+    },
+    {
+        "merged": "/Users/zakywisnu/Documents/Zaky/mywork/Android/TMDb_MADE/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_movie.xml",
+        "source": "/Users/zakywisnu/Documents/Zaky/mywork/Android/TMDb_MADE/app/src/main/res/layout/fragment_movie.xml"
+    }
+]

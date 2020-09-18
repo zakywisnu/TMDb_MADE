@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/Users/zakywisnu/Documents/Zaky/mywork/Android/TMDb_MADE/trending/build/intermediates/res/merged/debug/layout_fragment_trending.xml.flat",
+        "source": "/Users/zakywisnu/Documents/Zaky/mywork/Android/TMDb_MADE/trending/src/main/res/layout/fragment_trending.xml"
+    },
+    {
+        "merged": "/Users/zakywisnu/Documents/Zaky/mywork/Android/TMDb_MADE/trending/build/intermediates/res/merged/debug/layout_fragment_trending_tv_show.xml.flat",
+        "source": "/Users/zakywisnu/Documents/Zaky/mywork/Android/TMDb_MADE/trending/src/main/res/layout/fragment_trending_tv_show.xml"
+    },
+    {
+        "merged": "/Users/zakywisnu/Documents/Zaky/mywork/Android/TMDb_MADE/trending/build/intermediates/res/merged/debug/layout_fragment_trending_movie.xml.flat",
+        "source": "/Users/zakywisnu/Documents/Zaky/mywork/Android/TMDb_MADE/trending/src/main/res/layout/fragment_trending_movie.xml"
+    }
+]

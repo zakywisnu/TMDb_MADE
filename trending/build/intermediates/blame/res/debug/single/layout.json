@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/Users/zakywisnu/Documents/Zaky/mywork/Android/TMDb_MADE/trending/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_trending_movie.xml",
+        "source": "/Users/zakywisnu/Documents/Zaky/mywork/Android/TMDb_MADE/trending/src/main/res/layout/fragment_trending_movie.xml"
+    },
+    {
+        "merged": "/Users/zakywisnu/Documents/Zaky/mywork/Android/TMDb_MADE/trending/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_trending.xml",
+        "source": "/Users/zakywisnu/Documents/Zaky/mywork/Android/TMDb_MADE/trending/src/main/res/layout/fragment_trending.xml"
+    },
+    {
+        "merged": "/Users/zakywisnu/Documents/Zaky/mywork/Android/TMDb_MADE/trending/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_trending_tv_show.xml",
+        "source": "/Users/zakywisnu/Documents/Zaky/mywork/Android/TMDb_MADE/trending/src/main/res/layout/fragment_trending_tv_show.xml"
+    }
+]

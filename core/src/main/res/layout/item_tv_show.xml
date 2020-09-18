@@ -46,7 +46,7 @@
                 android:contentDescription="@string/image"
                 android:imageUrl="@{tvShow.posterPath}"
                 android:scaleType="centerCrop"
-                app:layout_constraintDimensionRatio="H,1.5:1"
+                app:layout_constraintDimensionRatio="H,1.5:2"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />

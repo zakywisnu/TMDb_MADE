@@ -1,0 +1,26 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/zakywisnu/Documents/Zaky/mywork/Android/TMDb_MADE/trending/build/intermediates/res/merged/debug/values_values.arsc.flat",
+            "map": [
+                {
+                    "source": "/Users/zakywisnu/Documents/Zaky/mywork/Android/TMDb_MADE/trending/src/main/res/values/strings.xml",
+                    "from": {
+                        "startLines": "1,2",
+                        "startColumns": "4,4",
+                        "startOffsets": "16,74",
+                        "endColumns": "57,61",
+                        "endOffsets": "69,131"
+                    },
+                    "to": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,113",
+                        "endColumns": "57,61",
+                        "endOffsets": "108,170"
+                    }
+                }
+            ]
+        }
+    ]
+}

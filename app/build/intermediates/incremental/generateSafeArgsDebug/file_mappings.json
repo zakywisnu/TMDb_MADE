@@ -1,0 +1,1 @@
+[{"navFile":"src/main/res/navigation/navigation.xml","javaFiles":["com.zeroemotion.tmdb_made.home.HomeFragmentDirections","com.zeroemotion.tmdb_made.favorite.FavoriteFragmentDirections","com.zeroemotion.tmdb_made.detail.DetailMovieFragmentArgs","com.zeroemotion.tmdb_made.detail.DetailTvShowFragmentArgs","com.zeroemotion.tmdb_made.trending.TrendingFragmentDirections"]}]

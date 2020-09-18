@@ -1,0 +1,17 @@
+R_DEF: Internal format may change without notice
+local
+drawable ic_error_background
+drawable ic_error_foreground
+id movieId
+id movieImage
+id movieRelease
+id movieTitle
+id top_space
+id tvShowId
+id tvShowImage
+id tvShowRelease
+id tvShowTitle
+layout item_movie
+layout item_tv_show
+mipmap ic_error
+string image
