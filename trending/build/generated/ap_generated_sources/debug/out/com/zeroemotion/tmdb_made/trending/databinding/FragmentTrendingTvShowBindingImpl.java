@@ -32,8 +32,8 @@ public class FragmentTrendingTvShowBindingImpl extends FragmentTrendingTvShowBin
     private FragmentTrendingTvShowBindingImpl(androidx.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
         super(bindingComponent, root, 0
             , (androidx.recyclerview.widget.RecyclerView) bindings[1]
-            , (android.widget.TextView) bindings[3]
-            , (android.widget.ProgressBar) bindings[2]
+            , (com.airbnb.lottie.LottieAnimationView) bindings[3]
+            , (com.airbnb.lottie.LottieAnimationView) bindings[2]
             );
         this.mboundView0 = (androidx.constraintlayout.widget.ConstraintLayout) bindings[0];
         this.mboundView0.setTag(null);

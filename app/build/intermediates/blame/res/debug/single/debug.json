@@ -28,6 +28,10 @@
         "source": "/Users/zakywisnu/Documents/Zaky/mywork/Android/TMDb_MADE/app/src/main/res/layout/fragment_home.xml"
     },
     {
+        "merged": "/Users/zakywisnu/Documents/Zaky/mywork/Android/TMDb_MADE/app/build/intermediates/res/merged/debug/layout_fragment_splash_screen.xml.flat",
+        "source": "/Users/zakywisnu/Documents/Zaky/mywork/Android/TMDb_MADE/app/src/main/res/layout/fragment_splash_screen.xml"
+    },
+    {
         "merged": "/Users/zakywisnu/Documents/Zaky/mywork/Android/TMDb_MADE/app/build/intermediates/res/merged/debug/layout_fragment_detail_tv_show.xml.flat",
         "source": "/Users/zakywisnu/Documents/Zaky/mywork/Android/TMDb_MADE/app/src/main/res/layout/fragment_detail_tv_show.xml"
     },

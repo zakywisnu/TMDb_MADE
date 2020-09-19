@@ -527,6 +527,23 @@ int attr listPreferredItemPaddingRight 0x0
 int attr listPreferredItemPaddingStart 0x0
 int attr logo 0x0
 int attr logoDescription 0x0
+int attr lottieAnimationViewStyle 0x0
+int attr lottie_autoPlay 0x0
+int attr lottie_cacheComposition 0x0
+int attr lottie_colorFilter 0x0
+int attr lottie_enableMergePathsForKitKatAndAbove 0x0
+int attr lottie_fallbackRes 0x0
+int attr lottie_fileName 0x0
+int attr lottie_imageAssetsFolder 0x0
+int attr lottie_loop 0x0
+int attr lottie_progress 0x0
+int attr lottie_rawRes 0x0
+int attr lottie_renderMode 0x0
+int attr lottie_repeatCount 0x0
+int attr lottie_repeatMode 0x0
+int attr lottie_scale 0x0
+int attr lottie_speed 0x0
+int attr lottie_url 0x0
 int attr materialAlertDialogBodyTextStyle 0x0
 int attr materialAlertDialogTheme 0x0
 int attr materialAlertDialogTitleIconStyle 0x0
@@ -1636,6 +1653,7 @@ int id add 0x0
 int id alertTitle 0x0
 int id async 0x0
 int id auto 0x0
+int id automatic 0x0
 int id blocking 0x0
 int id bottom 0x0
 int id buttonPanel 0x0
@@ -1688,6 +1706,7 @@ int id ghost_view_holder 0x0
 int id glide_custom_view_target_tag 0x0
 int id gone 0x0
 int id group_divider 0x0
+int id hardware 0x0
 int id home 0x0
 int id icon 0x0
 int id icon_group 0x0
@@ -1744,6 +1763,7 @@ int id line1 0x0
 int id line3 0x0
 int id listMode 0x0
 int id list_item 0x0
+int id lottie_layer_name 0x0
 int id masked 0x0
 int id media_actions 0x0
 int id message 0x0
@@ -1807,6 +1827,8 @@ int id progress_horizontal 0x0
 int id progress_icon 0x0
 int id progress_title 0x0
 int id radio 0x0
+int id restart 0x0
+int id reverse 0x0
 int id right 0x0
 int id right_icon 0x0
 int id right_side 0x0
@@ -1839,6 +1861,7 @@ int id slide 0x0
 int id smallLabel 0x0
 int id snackbar_action 0x0
 int id snackbar_text 0x0
+int id software 0x0
 int id spacer 0x0
 int id split_action_bar 0x0
 int id spread 0x0
@@ -3636,6 +3659,23 @@ int styleable LinearLayoutCompat_Layout_android_layout_width 3
 int[] styleable ListPopupWindow { 0x10102ac, 0x10102ad }
 int styleable ListPopupWindow_android_dropDownHorizontalOffset 0
 int styleable ListPopupWindow_android_dropDownVerticalOffset 1
+int[] styleable LottieAnimationView { 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0 }
+int styleable LottieAnimationView_lottie_autoPlay 0
+int styleable LottieAnimationView_lottie_cacheComposition 1
+int styleable LottieAnimationView_lottie_colorFilter 2
+int styleable LottieAnimationView_lottie_enableMergePathsForKitKatAndAbove 3
+int styleable LottieAnimationView_lottie_fallbackRes 4
+int styleable LottieAnimationView_lottie_fileName 5
+int styleable LottieAnimationView_lottie_imageAssetsFolder 6
+int styleable LottieAnimationView_lottie_loop 7
+int styleable LottieAnimationView_lottie_progress 8
+int styleable LottieAnimationView_lottie_rawRes 9
+int styleable LottieAnimationView_lottie_renderMode 10
+int styleable LottieAnimationView_lottie_repeatCount 11
+int styleable LottieAnimationView_lottie_repeatMode 12
+int styleable LottieAnimationView_lottie_scale 13
+int styleable LottieAnimationView_lottie_speed 14
+int styleable LottieAnimationView_lottie_url 15
 int[] styleable MaterialAlertDialog { 0x0, 0x0, 0x0, 0x0 }
 int styleable MaterialAlertDialog_backgroundInsetBottom 0
 int styleable MaterialAlertDialog_backgroundInsetEnd 1

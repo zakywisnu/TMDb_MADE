@@ -74,6 +74,7 @@ androidx.vectordrawable:vectordrawable-animated
 androidx.versionedparcelable:versionedparcelable
 androidx.viewpager2:viewpager2
 androidx.viewpager:viewpager
+com.airbnb.android:lottie
 com.github.bumptech.glide:annotations
 com.github.bumptech.glide:disklrucache
 com.github.bumptech.glide:gifdecoder
