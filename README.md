@@ -4,6 +4,7 @@
 * [General Info](#general-info)
 * [Used Libraries](#used-libraries)
 * [Setup](#setup)
+* [Lottie Resources](#lottie-resources)
 
 ## General Info
 This is a simple android movie catalogue project using Jetpack Library, SOLID and clean architecture, repository pattern, and dependency injection for Dicoding MADE Submission
@@ -32,3 +33,9 @@ This project build with:
 * Insert your TMDb API Key in MovieConstant.kt file inside core module
 * Run the application
 ```
+
+## Lottie Resources
+
+[Lottie Loading](https://www.lottiefiles.com/968-loading)
+[Lottie Movie](https://www.lottiefiles.com/21837-movie-clapper-board)
+[Lottie Network Error](https://www.lottiefiles.com/3097-network-error)
