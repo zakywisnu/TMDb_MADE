@@ -16,6 +16,7 @@ class HomeFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+
         (activity as AppCompatActivity?)!!.supportActionBar!!.show()
         return inflater.inflate(R.layout.fragment_home, container, false)
     }
