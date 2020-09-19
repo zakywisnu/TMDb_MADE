@@ -36,6 +36,6 @@ This project build with:
 
 ## Lottie Resources
 
-[Lottie Loading](https://www.lottiefiles.com/968-loading)
-[Lottie Movie](https://www.lottiefiles.com/21837-movie-clapper-board)
-[Lottie Network Error](https://www.lottiefiles.com/3097-network-error)
+* [Lottie Loading](https://www.lottiefiles.com/968-loading)
+* [Lottie Movie](https://www.lottiefiles.com/21837-movie-clapper-board)
+* [Lottie Network Error](https://www.lottiefiles.com/3097-network-error)
