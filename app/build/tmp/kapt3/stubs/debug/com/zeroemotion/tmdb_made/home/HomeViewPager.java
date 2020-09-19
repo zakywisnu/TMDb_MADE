@@ -7,7 +7,7 @@ public final class HomeViewPager extends androidx.fragment.app.FragmentStatePage
     private final java.util.List<androidx.fragment.app.Fragment> pages = null;
     private final android.content.Context context = null;
     @androidx.annotation.StringRes()
-    private static final int[] TITLE_TAB = {2131755135, 2131755186};
+    private static final int[] TITLE_TAB = {2131755136, 2131755187};
     public static final com.zeroemotion.tmdb_made.home.HomeViewPager.Companion Companion = null;
     
     @java.lang.Override()

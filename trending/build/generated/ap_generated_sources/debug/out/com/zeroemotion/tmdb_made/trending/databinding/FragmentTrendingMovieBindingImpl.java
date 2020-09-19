@@ -31,8 +31,8 @@ public class FragmentTrendingMovieBindingImpl extends FragmentTrendingMovieBindi
     }
     private FragmentTrendingMovieBindingImpl(androidx.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
         super(bindingComponent, root, 0
-            , (android.widget.TextView) bindings[3]
-            , (android.widget.ProgressBar) bindings[2]
+            , (com.airbnb.lottie.LottieAnimationView) bindings[3]
+            , (com.airbnb.lottie.LottieAnimationView) bindings[2]
             , (androidx.recyclerview.widget.RecyclerView) bindings[1]
             );
         this.mboundView0 = (androidx.constraintlayout.widget.ConstraintLayout) bindings[0];

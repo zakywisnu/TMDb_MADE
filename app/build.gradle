@@ -41,6 +41,7 @@ android {
 
 dependencies {
     implementation project(":core")
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     implementation fileTree(dir: "libs", include: ["*.jar"])
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
 

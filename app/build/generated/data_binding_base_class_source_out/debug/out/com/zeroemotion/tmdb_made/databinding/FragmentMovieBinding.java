@@ -4,29 +4,28 @@ package com.zeroemotion.tmdb_made.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ProgressBar;
-import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.databinding.DataBindingUtil;
 import androidx.databinding.ViewDataBinding;
 import androidx.recyclerview.widget.RecyclerView;
+import com.airbnb.lottie.LottieAnimationView;
 import com.zeroemotion.tmdb_made.R;
 import java.lang.Deprecated;
 import java.lang.Object;
 
 public abstract class FragmentMovieBinding extends ViewDataBinding {
   @NonNull
-  public final TextView movieError;
+  public final LottieAnimationView movieError;
 
   @NonNull
-  public final ProgressBar movieLoading;
+  public final LottieAnimationView movieLoading;
 
   @NonNull
   public final RecyclerView rvMovie;
 
   protected FragmentMovieBinding(Object _bindingComponent, View _root, int _localFieldCount,
-      TextView movieError, ProgressBar movieLoading, RecyclerView rvMovie) {
+      LottieAnimationView movieError, LottieAnimationView movieLoading, RecyclerView rvMovie) {
     super(_bindingComponent, _root, _localFieldCount);
     this.movieError = movieError;
     this.movieLoading = movieLoading;

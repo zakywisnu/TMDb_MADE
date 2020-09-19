@@ -4,13 +4,12 @@ package com.zeroemotion.tmdb_made.trending.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ProgressBar;
-import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.databinding.DataBindingUtil;
 import androidx.databinding.ViewDataBinding;
 import androidx.recyclerview.widget.RecyclerView;
+import com.airbnb.lottie.LottieAnimationView;
 import com.zeroemotion.tmdb_made.trending.R;
 import java.lang.Deprecated;
 import java.lang.Object;
@@ -20,14 +19,14 @@ public abstract class FragmentTrendingTvShowBinding extends ViewDataBinding {
   public final RecyclerView rvTrendingTvshow;
 
   @NonNull
-  public final TextView tvShowTrendingError;
+  public final LottieAnimationView tvShowTrendingError;
 
   @NonNull
-  public final ProgressBar tvShowTrendingLoading;
+  public final LottieAnimationView tvShowTrendingLoading;
 
   protected FragmentTrendingTvShowBinding(Object _bindingComponent, View _root,
-      int _localFieldCount, RecyclerView rvTrendingTvshow, TextView tvShowTrendingError,
-      ProgressBar tvShowTrendingLoading) {
+      int _localFieldCount, RecyclerView rvTrendingTvshow, LottieAnimationView tvShowTrendingError,
+      LottieAnimationView tvShowTrendingLoading) {
     super(_bindingComponent, _root, _localFieldCount);
     this.rvTrendingTvshow = rvTrendingTvshow;
     this.tvShowTrendingError = tvShowTrendingError;
